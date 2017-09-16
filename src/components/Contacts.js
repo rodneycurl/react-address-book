@@ -8,6 +8,7 @@ function Contacts(props) {
         <text style={{fontWeight: 'bold'}}>Phone Number: </text> { props.contact.phonenumber } <br />
         <text style={{fontWeight: 'bold'}}>E-mail: </text>{ props.contact.email } <br />
         <text style={{fontWeight: 'bold'}}>Address: </text>{ props.contact.address } <br />
+        <text style={{fontWeight: 'bold'}}>Tags: </text>{ props.contact.tags } <br />
       </p>
     </div>
   )}
