@@ -15,11 +15,11 @@ function App() {
       <div>
         <header style={{marginLeft: 30 +'em'}}>{ contacts.name }</header>
         <p style={{marginLeft: 30 +'em'}}>
-          { contacts.phonenumber }
+          Phone Number: { contacts.phonenumber }
           <br />
-          { contacts.email }
+          Email: { contacts.email }
           <br />
-          { contacts.address }
+          Address: { contacts.address }
         </p>
       </div>
     </section>
