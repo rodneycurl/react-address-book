@@ -4,8 +4,8 @@ function App() {
   const contacts = {
     name: "Mark Zuckerberg",
     phonenumber: "555-555-5555",
-    email: `mark@facebook.com`,
-    address: `1 Hacker Way, Menlo Park, 94025`,
+    e-mail: "mark@facebook.com",
+    address: "1 Hacker Way, Menlo Park, 94025",
   }
 
   return (
