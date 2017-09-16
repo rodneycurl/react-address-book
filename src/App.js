@@ -44,10 +44,18 @@ function App() {
     favorite: false,
     },
   ]
+  const favorite= contacts.filter(contact => contact.favorite)
 
   return (
     <section>
-      <h1 style={{marginLeft: 20 +'em'}}>Address Book</h1>
+      <h1 style={{marginLeft: 20 +'em'}}>ADDRESS BOOK</h1>
+      <h2 style={{marginLeft: 20 + 'em'}}>FAVORITES</h2>
+      { favorite
+        .map(f =>
+          <Contacts contact={f} />
+      )}
+      <hr />
+      <h2 style={{marginLeft: 20 + 'em'}}>ALL</h2>
       { contacts
         .map(contact =>
           <Contacts contact={contact} />
