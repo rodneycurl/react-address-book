@@ -1,21 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+function App() {
+  const contacts = {
+    name: "Mark Zuckerberg",
+    phonenumber: "555-555-5555",
+    email: `mark@facebook.com`,
+    address: `1 Hacker Way, Menlo Park, 94025`,
+  }
+
+  return (
+    <section>
+      <h1>Address Book</h1>
+
+      <div>
+        <header>{ contacts.name }</header>
+        <p>
+          { contacts.phonenumber }
+          <br />
+          { contacts.email }
+          <br />
+          { contacts.address }
         </p>
       </div>
-    );
-  }
+    </section>
+  )
 }
 
-export default App;
+export default App
