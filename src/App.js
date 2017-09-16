@@ -1,5 +1,6 @@
 import React from 'react'
 import Contacts from './components/Contacts'
+import Search from './components/Search'
 
 function App() {
   const contacts = [
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <section>
+      <button style={{marginLeft: 80 +'em'}}>CLICK ME!</button>
       <h1 style={{marginLeft: 20 +'em'}}>ADDRESS BOOK</h1>
       <h2 style={{marginLeft: 20 + 'em'}}>FAVORITES</h2>
       { favorite
@@ -60,6 +62,7 @@ function App() {
         .map(contact =>
           <Contacts contact={contact} />
       )}
+      { Search }
     </section>
   )
 }
