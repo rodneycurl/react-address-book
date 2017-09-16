@@ -5,7 +5,7 @@ class ClassComponent extends Component {
 
   render() {
     return (
-      <h1>{ this.title }</h1>
+      <input type="text" name="search" placeholder="Search..">
     )
   }
 }
