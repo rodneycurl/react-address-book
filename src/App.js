@@ -6,12 +6,11 @@ function App() {
     phonenumber: "555-555-5555",
     email: "mark@facebook.com",
     address: "1 Hacker Way, Menlo Park, 94025",
-  }
+    }
 
   return (
     <section>
       <h1 style={{marginLeft: 20 +'em'}}>Address Book</h1>
-
       <div>
         <header style={{marginLeft: 30 +'em'}}>{ contacts.name }</header>
         <p style={{marginLeft: 30 +'em'}}>
