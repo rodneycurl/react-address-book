@@ -4,17 +4,17 @@ function App() {
   const contacts = {
     name: "Mark Zuckerberg",
     phonenumber: "555-555-5555",
-    e-mail: "mark@facebook.com",
+    email: "mark@facebook.com",
     address: "1 Hacker Way, Menlo Park, 94025",
   }
 
   return (
     <section>
-      <h1>Address Book</h1>
+      <h1 style={{marginLeft: 20 +'em'}}>Address Book</h1>
 
       <div>
-        <header>{ contacts.name }</header>
-        <p>
+        <header style={{marginLeft: 30 +'em'}}>{ contacts.name }</header>
+        <p style={{marginLeft: 30 +'em'}}>
           { contacts.phonenumber }
           <br />
           { contacts.email }
