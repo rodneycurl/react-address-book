@@ -1,4 +1,5 @@
 import React from 'react'
+import Contacts from './components/Contacts'
 
 function App() {
   const contacts = [
@@ -37,16 +38,10 @@ function App() {
   return (
     <section>
       <h1 style={{marginLeft: 20 +'em'}}>Address Book</h1>
-      { contacts.map(contact => (
-      <div>
-        <p style={{marginLeft: 30 +'em'}}>
-          <text style={{fontWeight: 'bold'}}>Contact Name: </text> { contact.name } <br />
-          <text style={{fontWeight: 'bold'}}>Phone Number: </text> { contact.phonenumber } <br />
-          <text style={{fontWeight: 'bold'}}>E-mail: </text>{ contact.email } <br />
-          <text style={{fontWeight: 'bold'}}>Address: </text>{ contact.address } <br />
-        </p>
-      </div>
-    ))}
+      { contacts.map(contact =>
+          <Contacts contact={contact} />
+
+      )}
     </section>
   )
 }
